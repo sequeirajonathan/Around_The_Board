@@ -1,0 +1,132 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.board {
+  position: absolute;
+  top: 10vh;
+  left: 10vw;
+  min-width: 80vw;
+  max-width: 80vw;
+  min-height: 80vh;
+  max-height: 80vh;
+  border: 6px solid black;
+}
+
+.row {
+  position: absolute;
+  display: flex;
+}
+
+.south {
+  flex-direction: row-reverse;
+  right: 0;
+  bottom: 0;
+  min-width: 67vw;
+  min-height: 20vh;
+}
+
+.west {
+  flex-direction: column-reverse;
+  left: 0;
+  bottom: 0;
+  min-width: 12.7vw;
+  min-height: 59.57vh;
+}
+
+.north {
+  flex-direction: row;
+  left: 0;
+  top: 0;
+  min-width: 67vw;
+  min-height: 20vh;
+}
+
+.east {
+  flex-direction: column;
+  right: 0;
+  top: 0;
+  min-width: 12.7vw;
+  min-height: 59.6vh;
+}
+
+.spots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.south .spots {
+  border: 3px solid blue;
+  border-bottom: 0;
+  flex: 1;
+}
+
+.south .end {
+  flex: 1.42;
+}
+
+
+
+.west .spots {
+  border: 3px solid red;
+  border-left: 0;
+  flex: 1;
+}
+
+.west .end {
+  flex: 1.5;
+}
+
+.north .spots {
+  border: 3px solid green;
+  border-top: 0;
+  flex: 1;
+}
+
+.north .end {
+  flex: 1.42;
+}
+
+
+.east .spots {
+  border: 3px solid gold;
+  border-right: 0;
+  flex: 1;
+}
+
+.east .end {
+  flex: 1.5;
+}
+
+.player {
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 50%;
+  min-width: 25px;
+  max-width: 50px;
+  min-height: 15px;
+  max-height: 30px;
+}
+
+.die {
+  position: absolute;
+  top: 38vh;
+  left: 44vw;
+  min-width: 13vw;
+  max-width: 13vw;
+}
+
+.die img {
+  width: 100%;
+}
+
+.roll {
+  font-size: 50px;
+  position: absolute;
+  top: 7vh;
+  left: 5vw;
+
+
+}
